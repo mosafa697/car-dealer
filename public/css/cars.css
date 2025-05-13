@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    justify-content: center;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.car-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.car-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+    transition: box-shadow 0.2s;
+}
+
+.car-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.car-card .details {
+    padding: 15px;
+}
+
+.car-card .details h3 {
+    margin: 0 0 10px;
+}
+
+.car-card .details p {
+    margin: 4px 0;
+    color: #555;
+}
